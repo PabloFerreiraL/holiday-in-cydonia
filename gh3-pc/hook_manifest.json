@@ -1,0 +1,30 @@
+{
+  "base": 268435456,
+  "flag_offset": 4096,
+  "flag_relocation": 15,
+  "return_relocation": 284,
+  "flag_relocations": [
+    15,
+    527
+  ],
+  "return_relocations": [
+    284,
+    660
+  ],
+  "return_targets": [
+    4394871,
+    4392470
+  ],
+  "miss_hook": 4392464,
+  "miss_original": "55bd01000000",
+  "miss_offset": 512,
+  "miss_routine_sha256": "de04ee7b9b1bddc1e24e81311f2944f51083e239f06579654264ecaaf070884c",
+  "hook": 4394865,
+  "return_address": 4394871,
+  "original": "8b4c242885c9",
+  "code_size": 664,
+  "executable_sha256": "801f8a522651a479d63a9ff5fbde5be949ba0b7ad2ec0e5fb1d92ab1a8ef2154",
+  "routine_start": 4392832,
+  "routine_size": 4490,
+  "routine_sha256": "aa2c1c62d61e52a0a0b8f9f77c24002b47377823049dc787c3bc63f3102a9e16"
+}

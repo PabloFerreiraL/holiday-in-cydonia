@@ -1,0 +1,9 @@
+session.log
+*.log
+__pycache__/
+.vs/
+staging/
+analysis/
+*.iso
+*.elf
+*.lnk

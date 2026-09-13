@@ -1,0 +1,2 @@
+# Keep the downloadable patch byte-for-byte identical to SHA256SUMS.txt.
+*.pnach -text whitespace=cr-at-eol
