@@ -1,4 +1,4 @@
-# Guitar Hero III / Windows PC
+# Controller Hold-to-Hit for Guitar Hero III / Windows PC
 
 Download **GH3-HoldToHit.exe**. No Python installation is needed to run it.
 
@@ -18,7 +18,7 @@ The helper checks both the executable hash and the live routines before patching
 4. Return to GH3, press **F6**, and resume. You can also use the Enable/Disable button.
 5. Close the helper to turn it off and restore the original game instructions.
 
-It supports player 1. Hold the exact matching buttons for automatic hits; release to stop them. Ordinary presses still receive native judgment. V3 adds one-time confirmation for a tap on the note the helper just scored, within the native timing window, to avoid an accidental extra-press penalty. It does not add another hit or score.
+It supports player 1. Hold the exact matching buttons for automatic hits; release to stop them. Ordinary presses still receive native judgment. The helper includes one-time confirmation for a tap on the note the helper just scored, within the native timing window, to avoid an accidental extra-press penalty. It does not add another hit or score.
 
 If access is denied when attaching to an elevated game, run the helper at the same permission level. If it is forcibly terminated, restart GH3 to clear the runtime patch.
 
@@ -48,4 +48,4 @@ The script uses the Windows .NET Framework C# compiler and embeds `hold_hook.bin
 
 ## Status
 
-Experimental v3, confirmed working in gameplay by the original tester on their controller setup on September 13, 2026, following the tapping correction. It also passed 107 instruction-level scenarios, with scoring callbacks simulated. This does not establish compatibility with other executable builds or every controller. See [testing](../docs/TESTING.md).
+Controller Hold-to-Hit was confirmed working in gameplay by the original tester on their controller setup on September 13, 2026, following the tapping correction. It also passed 107 instruction-level scenarios, with scoring callbacks simulated. This does not establish compatibility with other executable builds or every controller. See [testing](../docs/TESTING.md).

@@ -1,4 +1,4 @@
-# Guitar Hero II / PCSX2
+# Controller Hold-to-Hit for Guitar Hero II / PCSX2
 
 Download `SLUS-21447_2A6C845B.pnach` from this folder.
 
@@ -6,7 +6,7 @@ Download `SLUS-21447_2A6C845B.pnach` from this folder.
 
 1. Place the PNACH in the **cheats folder configured in PCSX2**.
 2. Open Guitar Hero II's game properties, then Cheats.
-3. Enable **Hold matching frets to hit notes (experimental v3)**. Disable older copies.
+3. Enable **Controller Hold-to-Hit**. Disable older copies.
 4. Boot the game fresh. Do not load an old emulator save state for the first test. An ordinary memory-card save is fine.
 5. Use normal DualShock 2/gamepad mode and your existing button bindings.
 

@@ -1,7 +1,7 @@
 gametitle=Guitar Hero II (USA) (SLUS-21447) [CRC 2A6C845B]
-comment=Experimental hold-to-hit v3. Restores normal button-press judgment and empty-press penalties. Requires a fresh game boot.
+comment=Controller Hold-to-Hit. Restores normal button-press judgment and empty-press penalties. Requires a fresh game boot.
 
-[Hold matching frets to hit notes (experimental v3)]
+[Controller Hold-to-Hit]
 author=Codex - custom patch for Pablo
 description=Hold matching frets for repeated notes. New presses retain normal hit/miss judgment, including empty-press penalties. Standard gamepad mode only. Requires a fresh game boot.
 // USA retail 1.00 only; executable SHA-256 recorded in the accompanying notes.

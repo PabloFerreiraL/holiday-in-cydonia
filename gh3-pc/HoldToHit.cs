@@ -112,7 +112,7 @@ sealed class Trainer : IDisposable {
    missJump=new byte[]{0xe9,0,0,0,0,0x90};Array.Copy(BitConverter.GetBytes(unchecked((int)(cave+Payload.MissOffset-Payload.MissHook-5))),0,missJump,1,4);
    hookAttempted=true;ReplaceHook(Payload.MissHook,Payload.MissOriginal,missJump);missInstalled=true;
    ReplaceHook(Payload.Hook,Payload.Original,jump);installed=true;Enabled=false;
-   Log("V3 attached PID "+Game.Id+"; OFF; helper="+cave.ToString("X8")+"; both hooks verified.");
+   Log("Controller Hold-to-Hit attached PID "+Game.Id+"; OFF; helper="+cave.ToString("X8")+"; both hooks verified.");
   } catch {
    if(missInstalled){try{ReplaceHook(Payload.MissHook,missJump,Payload.MissOriginal);missInstalled=false;}catch(Exception restore){Log("Miss-hook rollback failed: "+restore.Message+". Restart GH3 to clear the disabled helper.");}}
    // Keep allocated code if a hook write was attempted: an interrupted game
@@ -148,7 +148,7 @@ sealed class ControlWindow : Form {
  bool hotkey,autoAttach;
  internal ControlWindow(bool launchGame) {
   autoAttach=launchGame;
-  Text="GH3 Hold-to-hit — experimental v3 (tap + hold)";ClientSize=new Size(510,240);FormBorderStyle=FormBorderStyle.FixedDialog;MaximizeBox=false;
+  Text="Controller Hold-to-Hit — Guitar Hero III";ClientSize=new Size(510,240);FormBorderStyle=FormBorderStyle.FixedDialog;MaximizeBox=false;
   Font=new Font("Segoe UI",10);StartPosition=FormStartPosition.CenterScreen;
   status.SetBounds(20,18,470,46);status.Font=new Font(Font.FontFamily,13,FontStyle.Bold);Controls.Add(status);
   var help=new Label(){Text="F6: toggle while GH3 is focused\nHold matching frets to hit repeated notes.\nNew button presses keep normal hit/miss judgment.\nClose this tool to restore the original game code.",AutoSize=false};
