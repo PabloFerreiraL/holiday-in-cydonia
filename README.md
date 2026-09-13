@@ -1,4 +1,4 @@
-**now you can play knights of cydonia and holiday in cambodia without breaking your controller or your fingers!**
+**Now you can play knights of cydonia and holiday in cambodia without breaking your controller or your fingers!**
 
 # Controller Hold-to-Hit
 
