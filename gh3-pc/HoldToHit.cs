@@ -184,7 +184,7 @@ static class Program {
  [STAThread] static void Main(string[] args){
   bool launch=args.Length==1&&args[0]=="--launch-game";
   if(launch){try{LaunchGame();}catch(Exception ex){MessageBox.Show(ex.Message,"GH3 launcher");Environment.ExitCode=1;return;}}
-  bool first;using(var mutex=new System.Threading.Mutex(true,"Local\\PabloGH3HoldToHitV1",out first)){
+  bool first;using(var mutex=new System.Threading.Mutex(true,"Local\\GH3ControllerHoldToHit",out first)){
    if(!first){if(!launch)MessageBox.Show("The GH3 hold-to-hit tool is already running.");return;}
    if(args.Length==1&&args[0]=="--self-test") {
     var test=new Trainer();
